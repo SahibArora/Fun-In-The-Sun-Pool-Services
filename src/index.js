@@ -36,7 +36,7 @@ app.use(express.static(publicDirPath)); // giving express access to our static f
 
 //  App Routes works from here ...
 app.get('/', (req,res) => {
-    res.render('index4',{}) // telling express to look for welcome.hbs and {} - means sending no data
+    res.render('index',{}) // telling express to look for welcome.hbs and {} - means sending no data
 })
 
 app.get('*',(req,res)=>{
