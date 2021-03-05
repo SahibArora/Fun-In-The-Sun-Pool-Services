@@ -77,7 +77,7 @@
                   <a href="#pricing" class="page-scroll">Prices</a>
                 </li>
                 <li>
-                  <a href="#contact" class="page-scroll">Contact Us</a>
+                  <a href="#contactus" class="page-scroll">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -305,49 +305,6 @@
   </div>
 </section>
 
-
-<!--What We Offer-->
-{{!-- <section class="section-padding" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center wow fadeIn" data-wow-duration="500ms" data-wow-delay="300ms">
-        <p class="title">Our Valued Services</p>
-        <h2 class="heading">What we Offer</h2>
-      </div>
-      <div class="col-md-4 col-sm-4 canvas-box magin30 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms"> 
-        <span class="text-center"><i class="icon-icons9 color6"></i></span>
-        <h4 class="color6">Unlimited Features</h4>
-        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-md-4 col-sm-4 canvas-box magin30 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="500ms"> 
-        <span class="text-center"><i class="icon-umbrella color1"></i></span>
-        <h4 class="color1">creative design</h4>
-        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-md-4 col-sm-4 canvas-box magin30 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="700ms"> 
-        <span class="text-center"><i class="icon-icons20 color6"></i></span>
-        <h4 class="color6">Responsive Design</h4>
-        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-md-4 col-sm-4 canvas-box magin30 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="900ms"> 
-        <span class="text-center"><i class="icon-icons96  color1"></i></span>
-        <h4 class="color1">Responsive Design</h4>
-        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-md-4 col-sm-4 canvas-box magin30 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1100ms"> 
-        <span class="text-center"><i class="icon-globe color6"></i></span>
-        <h4 class="color6">Responsive Design</h4>
-        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-      <div class="col-md-4 col-sm-4 canvas-box magin30 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1200ms">
-        <span class="text-center"><i class="icon-icons42 color1"></i></span>
-        <h4 class="color1">Responsive Design</h4>
-        <p>Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
-      </div>
-    </div>
-  </div>
-</section> --}}
-
 <!-- What We Do Section -->
 <section class="we-do bg-grey padding" id='about'>
   <div class="container">
@@ -529,15 +486,6 @@
       <div class="col-md-12 text-center">
         <p class="title">what we do</p>
         <h2 class="heading" style='text-decoration:underline'>latest projects</h2>
-        <!--<div class="work-filter">
-          <ul class="text-center">
-             <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-             <li><a href="javascript:;" data-filter=".brand" class="filter">Brand</a></li>
-             <li><a href="javascript:;" data-filter=".design" class="filter">Design</a></li>
-             <li><a href="javascript:;" data-filter=".graphic" class="filter">Graphic</a></li>
-             <li><a href="javascript:;" data-filter=".video" class="filter">Video</a></li>
-          </ul>
-		 </div>-->
       </div>
     </div>
   </div>
@@ -727,20 +675,74 @@
                     <a class="pricing_action text-center bounce-white" href="#.">Choose plan</a>
                 </div>
             </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+ <h2 class="heading">-- OR --</h2>
 </div>
-</div>
-</div>
-            
 </section>
 
 <!-- Contact Us -->
 <section class="info-section" id="contact">
+    <div class="col-md-12 block light text-center wow fadeInLeftBig" data-wow-duration="500ms" data-wow-delay="300ms">
+      <div class="center">
+        <h2>Get a Quote</h2>
+        <form class="form-inline" id="contact-form" onSubmit="return validateForm(this)">
+          <div class="row">
+            <div class="col-md-12 center"><div id="result"></div> </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="text" class="form-control"  placeholder="Your Name *" name="name" id="name" required>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="number" class="form-control"  placeholder="Phone Number *" name="phone" id="phone" onfocusout='validatePhoneNumber()' required>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="email" class="form-control"  placeholder="E-mail Address" name="email" id="email" onfocusout='validateEmail()'>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input list="methodOfContacts" class="form-control"  placeholder="Method of Contact *" name="methodOfContact" id="methodOfContact" onfocusout='validateMethodOfContact()' required>
+              <datalist id='methodOfContacts'>
+                <option value="Phone">
+                <option value="Email">
+              </datalist>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input list="inquires" class="form-control"  placeholder="Reason For Inquiry *" name="reasonOfInquiry" id="reasonOfInquiry" required>
+              <datalist id='inquires'>
+                <option value="Option A">
+                <option value="Option B">
+              </datalist>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="text" class="form-control"  placeholder="Project Timeline *" name="projectTimeline" id="projectTimeline" required>
+            </div>
+            <div class="col-xs-8 col-md-12">
+              <textarea placeholder="Message... *" class="form-control" name="message" id="message" required></textarea>
+              <button type="submit" class="btn-black btn-blue bounce-white" id="btn_submit"> Get a Quote </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info-section" id="contactus">
   <div class="row">
-    <div class="col-md-6 block text-center wow fadeInLeftBig" data-wow-duration="300ms" data-wow-delay="300ms">
+    <div class="col-md-12 block text-center wow fadeInRightBig" data-wow-duration="300ms" data-wow-delay="300ms">
       <div class="center">
         <p class="title">Open for you</p>
-        <h2>We're here</h2>
-        <p class="margen">Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+        <h2>Contact Us</h2><br>
+        <p class="margen">Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p><br>
         <p><strong>Postal Adress:</strong> 198 West 21th Street Victoria 8007, Australia</p>
         <p><strong>Phone:</strong> (654) 332-112-222</p>
         <p><strong>Email:</strong> <a href="#.">email@website.com</a></p>
@@ -751,41 +753,6 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-6 block light text-center wow fadeInRightBig" data-wow-duration="500ms" data-wow-delay="300ms">
-      <div class="center">
-        <p class="title">With propositions</p>
-        <h2>Contact Us</h2>
-        <form class="form-inline" id="contact-form" onSubmit="return validateForm(this)">
-          <div class="row">
-            <div class="col-md-12 center"><div id="result"></div> </div>
-          </div>
-          
-          <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input type="text" class="form-control"  placeholder="Your Name*" name="name" id="name" required>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input type="number" class="form-control"  placeholder="Phone Number*" name="phone" id="phone" onfocusout='validatePhoneNumber()' required>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input type="email" class="form-control"  placeholder="E-mail Address" name="email" id="email" onfocusout='validateEmail()'>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input list="methodOfContacts" class="form-control"  placeholder="Method to Contact*" name="methodOfContact" id="methodOfContact" onfocusout='validateMethodOfContact()' required>
-              <datalist id='methodOfContacts'>
-                <option value="Phone">
-                <option value="Email">
-              </datalist>
-            </div>
-            <div class="col-xs-12 col-md-12">
-              <textarea placeholder="Message...*" class="form-control" name="message" id="message" required></textarea>
-              <button type="submit" class="btn-black btn-blue bounce-white" id="btn_submit"> Send Message </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- Footer-->
@@ -799,7 +766,7 @@
           <li><a href="#about" class="page-scroll">Our Services</a></li>
           <li><a href="#project" class="page-scroll">Work</a></li>
           <li><a href="#pricing" class="page-scroll">Prices</a></li>
-          <li><a href="#contact" class="page-scroll">Contact Us</a></li>
+          <li><a href="#contactus" class="page-scroll">Contact Us</a></li>
         </ul>
         <p>Copyright &copy; 2021 Fits Pool Service. all rights reserved.</p>
         <p><strong>Website by <a href='mailto:sarora37@outlook.com'><u>Sahib Arora</u></a></strong></p>
