@@ -1,5 +1,5 @@
 function validateForm(){
-    return validateEmail() && validatePhoneNumber() && validateMethodOfContact() 
+    return validatePhoneNumber() && validateMethodOfContact() 
 }
 
 function validateEmail(){
@@ -26,7 +26,7 @@ function validatePhoneNumber()
     }
     else
     {
-        alert("Not a valid Phone Number\n\nShould be exactly of 10 numbers");
+        alert("Phone number should be exactly 10 numbers,\n and in the format xxxxxxxxxx");
         document.getElementById('phone').style.borderColor = 'red'
         return false;
     }
