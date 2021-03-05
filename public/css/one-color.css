@@ -2,40 +2,40 @@
 /* CSS Document */
 
 .green {
-	background:#82b440;
+	background:#0588BC;
 	}
 .green_light {
-	background: rgba(130, 180, 64, 0.65);
+	background: #0588BC;
 	}
 .blue{
-	background:#07aaa5;
+	background:#0588BC;
 	} 
 .dark_gray {
-	background:#969696;
+	background:#0588BC;
 	}
 .we-do .do-wrap a{
-	color:#969696;
+	color:#0588BC;
 }
 
 .we-do .do-wrap a:hover{
-	color:#07aaa5;
+	color:#0588BC;
 }
 .we-do .do-wrap:hover .top, we-do .do-wrap:focus .top, .we-do .do-wrap:hover span, .we-do .do-wrap:focus span{
-	background:#07aaa5;
+	background:#0588BC;
 }
 
 .pricing_item.dark_gray {
-    border-color: #969696;
+    border-color: #0588BC;
 }
 
 .pricing_item.dark_gray .pricing_action{
-    background: #969696;
+    background: #0588BC;
 }
 
 
 .pricing_item.dark_gray:hover .pricing_action{
 	border:1px solid transparent;
-	background:#07AAA5 !important;
+	background:#0588BC !important;
 }
 
 

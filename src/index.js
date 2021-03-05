@@ -39,9 +39,9 @@ app.get('/', (req,res) => {
     res.render('index',{}) // telling express to look for welcome.hbs and {} - means sending no data
 })
 
-app.get('*',(req,res)=>{
+/*app.get('*',(req,res)=>{
     res.render('404', {});
-});
+});*/
 
 // Making Server listen to specific port.
 
