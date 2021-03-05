@@ -1,0 +1,106 @@
+
+<section class=" padding" id="pricing">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<p class="title">Passionate about perfection</p>
+ <h2 class="heading">Pricing Tables</h2>
+</div>
+<div class="col-md-12">
+<div class="pricing pricing_tenzin">
+                <div class="pricing_item dark_gray">
+                    <h3 class="pricing_title">Basic</h3>
+                    <div class="pricing_price"><span class="pricing_currency">$</span>199.90</div>
+                    <p class="pricing_sentence">Perfect for xyz</p>
+                    <ul class="pricing_list">
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                    </ul>
+                    <a class="pricing_action text-center bounce-white" href="#.">Choose plan</a>
+                </div>
+                <div class="pricing_item active">
+                    <h3 class="pricing_title">Popular</h3>
+                    <div class="pricing_price"><span class="pricing_currency">$</span>529.90</div>
+                    <p class="pricing_sentence">Suitable for xyz</p>
+                    <ul class="pricing_list">
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                    </ul>
+                    <a class="pricing_action text-center bounce-white" href="#.">Choose plan</a>
+                </div>
+                <div class="pricing_item dark_gray">
+                    <h3 class="pricing_title">Premier</h3>
+                    <div class="pricing_price"><span class="pricing_currency">$</span>959.90</div>
+                    <p class="pricing_sentence">Great for xyz</p>
+                    <ul class="pricing_list">
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Service Name</li>
+                    </ul>
+                    <a class="pricing_action text-center bounce-white" href="#.">Choose plan</a>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="info-section" id="contact">
+    <div class="col-md-12 block light text-center wow fadeInLeftBig" data-wow-duration="500ms" data-wow-delay="300ms">
+      <div class="center">
+        <h2>Request a Quote</h2>
+        <form class="form-inline" id="contact-form" onSubmit="return validateForm(this)">
+          <div class="row">
+            <div class="col-md-12 center"><div id="result"></div> </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="text" class="form-control"  placeholder="Your Name *" name="name" id="name" required>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="number" class="form-control"  placeholder="Phone Number *" name="phone" id="phone" onfocusout='validatePhoneNumber()' required>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="email" class="form-control"  placeholder="E-mail Address" name="email" id="email" onfocusout='validateEmail()'>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input list="methodOfContacts" class="form-control"  placeholder="Method of Contact *" name="methodOfContact" id="methodOfContact" onfocusout='validateMethodOfContact()' required>
+              <datalist id='methodOfContacts'>
+                <option value="Phone">
+                <option value="Email">
+              </datalist>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input list="inquires" class="form-control"  placeholder="Reason For Inquiry *" name="reasonOfInquiry" id="reasonOfInquiry" required>
+              <datalist id='inquires'>
+                <option value="Option A">
+                <option value="Option B">
+              </datalist>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="text" class="form-control"  placeholder="Project Timeline *" name="projectTimeline" id="projectTimeline" required>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="text" class="form-control"  placeholder="Address/Town *" name="Address" id="Address" required>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="text" class="form-control"  placeholder="How did you hear about us? *" name="hearAboutUs" id="hearAboutUs" required>
+            </div>
+            <div class="col-xs-12 col-md-12">
+              <textarea placeholder="Additional Details... *" class="form-control" name="message" id="message" required></textarea>
+              <button type="submit" class="btn-black btn-blue bounce-white" id="btn_submit"> Get a Quote </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
