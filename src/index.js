@@ -6,6 +6,7 @@ var express = require('express')
 var app = express()
 var hbs = require('hbs')
 var bodyParser = require('body-parser')
+const {sendEmail} = require('./email/account.js')
 
 // Database Connection
 require('./db-connection/mongoose')
@@ -37,6 +38,11 @@ app.use(express.static(publicDirPath)); // giving express access to our static f
 //  App Routes works from here ...
 app.get('/', (req,res) => {
     res.render('index',{}) // telling express to look for welcome.hbs and {} - means sending no data
+})
+
+app.post('/requestQuote', async (req,res)=>{
+    res.render('thankyou', {})
+    sendEmail(req.body)
 })
 
 /*app.get('*',(req,res)=>{
