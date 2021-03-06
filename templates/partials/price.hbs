@@ -17,7 +17,7 @@
                         <li class="pricing_feature">Service Name</li>
                         <li class="pricing_feature">Service Name</li>
                     </ul>
-                    <a class="pricing_action text-center bounce-white" href="#.">Choose plan</a>
+                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("requestBasic")' href="#contact">Request Basic Plan</a>
                 </div>
                 <div class="pricing_item active">
                     <h3 class="pricing_title">Popular</h3>
@@ -30,7 +30,7 @@
                         <li class="pricing_feature">Service Name</li>
                         <li class="pricing_feature">Service Name</li>
                     </ul>
-                    <a class="pricing_action text-center bounce-white" href="#.">Choose plan</a>
+                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("requestPopular")' href="#contact">Request Popular Plan</a>
                 </div>
                 <div class="pricing_item dark_gray">
                     <h3 class="pricing_title">Premier</h3>
@@ -44,7 +44,7 @@
                         <li class="pricing_feature">Service Name</li>
                         <li class="pricing_feature">Service Name</li>
                     </ul>
-                    <a class="pricing_action text-center bounce-white" href="#.">Choose plan</a>
+                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("requestPremier")' href="#contact">Request Premier Plan</a>
                 </div>
             </div>
           </div>
@@ -69,7 +69,7 @@
               <input type="number" class="form-control"  placeholder="Phone Number *" name="phone" id="phone" onfocusout='validatePhoneNumber()' required>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input type="email" class="form-control"  placeholder="E-mail Address" name="email" id="email" onfocusout='validateEmail()'>
+              <input type="email" class="form-control"  placeholder="E-mail Address (optional)" name="email" id="email" onfocusout='validateEmail()'>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
               <input list="methodOfContacts" class="form-control"  placeholder="Method of Contact *" name="methodOfContact" id="methodOfContact" onfocusout='validateMethodOfContact()' required>
@@ -79,23 +79,24 @@
               </datalist>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input list="inquires" class="form-control"  placeholder="Reason For Inquiry *" name="reasonOfInquiry" id="reasonOfInquiry" required>
-              <datalist id='inquires'>
-                <option value="Option A">
-                <option value="Option B">
+              <input list="Services" class="form-control"  placeholder="Choose your desired Service *" name="services" id="services" required>
+              <datalist id='Services'>
+                <option value="Basic Plan">
+                <option value="Popular Plan">
+                <option value="Premier Plan">
               </datalist>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input type="text" class="form-control"  placeholder="Project Timeline *" name="projectTimeline" id="projectTimeline" required>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
               <input type="text" class="form-control"  placeholder="Address/Town *" name="Address" id="Address" required>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input type="text" class="form-control"  placeholder="How did you hear about us? *" name="hearAboutUs" id="hearAboutUs" required>
+              <input type="text" class="form-control"  placeholder="Project Timeline (optional)" name="projectTimeline" id="projectTimeline">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+              <input type="text" class="form-control"  placeholder="How did you hear about us? (optional)" name="hearAboutUs" id="hearAboutUs">
             </div>
             <div class="col-xs-12 col-md-12">
-              <textarea placeholder="Additional Details... *" class="form-control" name="message" id="message" required></textarea>
+              <textarea placeholder="Additional Details... (optional)" class="form-control" name="message" id="message"></textarea>
               <button type="submit" class="btn-black btn-blue bounce-white" id="btn_submit"> Get a Quote </button>
             </div>
           </div>

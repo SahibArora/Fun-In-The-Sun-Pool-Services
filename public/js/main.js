@@ -47,3 +47,13 @@ function validateMethodOfContact()
         return false;
     }
 }
+
+function requestPlan(name){
+    if(name == 'requestBasic'){
+        document.getElementById('services').value = 'Basic Plan'
+    }else if(name == 'requestPopular'){
+        document.getElementById('services').value = 'Popular Plan'
+    }else if(name == 'requestPremier'){
+        document.getElementById('services').value = 'Premier Plan'
+    }
+}
