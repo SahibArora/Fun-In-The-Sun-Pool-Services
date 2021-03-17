@@ -110,11 +110,11 @@ jQuery(function($) {'use strict',
 //Change Diffrent Logos on Nav
   jQuery(window).scroll(function() {
   
-	 if (jQuery(window).scrollTop() >= 25) {
-		jQuery(".logo > img").attr("src", "images/logo.png");
+	 if (jQuery(window).scrollTop() >= 20) {
+		jQuery(".logo > img").attr("src", "images/logo-text.png");
 	 }
 	  else {
-		jQuery(".logo > img").attr("src", "images/logo-white.png");
+		jQuery(".logo > img").attr("src", "images/Logo-1-black.png");
 	 }
   
   });
@@ -140,7 +140,7 @@ jQuery(function($) {'use strict',
 		$(".number-counters [data-to]").each(function () {
 		  var e = $(this).attr("data-to");
 		  $(this).delay(6e3).countTo({
-			 from: 50,
+			 from: 0,
 			 to: e,
 			 speed: 3e3,
 			 refreshInterval: 50

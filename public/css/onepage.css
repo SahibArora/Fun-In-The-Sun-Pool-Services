@@ -154,6 +154,12 @@ p{
 textarea{
 	resize:none;
 }
+
+.uppercase {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
 p.title{
 	font-size:14px;
 	text-transform:capitalize;
@@ -488,13 +494,13 @@ ul.top-right li a:hover,
 }
 .navbar-brand {
   height: auto;
-  padding:29px 0;
+  padding:15px 0;
   float:none;
   display:block;
   width:150px;
 }
 #navigation.affix .navbar-brand {
-  padding: 16px 0;
+  padding:15px 0;
   width: 134px;
 }
 .navbar-default .navbar-nav > li{
@@ -691,7 +697,7 @@ ul.top-right li a:hover.instagram{
 	display: inline-block;
 	width:110px;
 }
-.logo-space{ padding:32px 0;}
+.logo-space{ padding:12px 0;}
 .push_nav li{
 	position:relative;
 	overflow: hidden;
@@ -2347,9 +2353,9 @@ margin-top: 30px;
   h2{ font-size:30px; }
   #main-navigation{ background-color: #1b1d1f; }
   
-  .navbar-brand, #navigation.affix .navbar-brand{ display:inline-block;  padding: 10px 0;}
+  .navbar-brand, #navigation.affix .navbar-brand{ display:inline-block;  padding: 15px 0;}
   .navbar-default .navbar-nav > li > a, #navigation.affix  .navbar-default .navbar-nav > li > a {
-	  padding: 10px 0;
+	  padding: 5px 0;
 	}
    ul.top-right, #navigation.affix ul.top-right{
 		margin:0;
