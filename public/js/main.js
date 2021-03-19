@@ -1,17 +1,18 @@
 function validateForm(){
-    return validatePhoneNumber() && validateMethodOfContact() 
+    return validatePhoneNumber()
 }
 
 function validateEmail(){
     var email = document.getElementById('email').value;
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(re.test(String(email).toLowerCase()) == false){
-        alert('Please enter Valid email address');
+        document.getElementById('emailMessage').style.display = 'block'
         document.getElementById('email').style.borderColor = 'red'
         return false
     }
 
     document.getElementById('email').style.borderColor = 'green'
+    document.getElementById('emailMessage').style.display = 'none'
     return true
 }   
 
@@ -22,38 +23,61 @@ function validatePhoneNumber()
     if(inputtxt.match(phoneno))
     {
         document.getElementById('phone').style.borderColor = 'green'
+        document.getElementById('phoneMessage').style.display = 'none'
         return true;
     }
     else
     {
-        alert("Phone number should be exactly 10 numbers,\n and in the format xxxxxxxxxx");
+        document.getElementById('phoneMessage').style.display = 'block'
         document.getElementById('phone').style.borderColor = 'red'
         return false;
     }
 }
 
-function validateMethodOfContact()
-{
-    var inputtxt = document.getElementById('methodOfContact').value.toLowerCase();
-    if(inputtxt == 'phone' || inputtxt == 'email')
-    {
-        document.getElementById('methodOfContact').style.borderColor = 'green'
-        return true;
-    }
-    else
-    {
-        alert("Method of Contact can be either Phone or Email but not " + inputtxt);
-        document.getElementById('methodOfContact').style.borderColor = 'red'
-        return false;
+function requestPlan(name){
+    if(name == 'Liner Install'){
+        document.getElementById('services').value = 'Liner Install'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Equipment Install'){
+        document.getElementById('services').value = 'Equipment Install'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Pool Leak Detection'){
+        document.getElementById('services').value = 'Pool Leak Detection'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Openings and Closings'){
+        document.getElementById('services').value = 'Openings and Closings'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Swimming Pool Maintenance'){
+        document.getElementById('services').value = 'Swimming Pool Maintenance'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Hot Tub Maintenance'){
+        document.getElementById('services').value = 'Hot Tub Maintenance'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Chemical Checks'){
+        document.getElementById('services').value = 'Chemical Checks'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Weekly Service'){
+        document.getElementById('services').value = 'Weekly Service'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Safety Covers Install'){
+        document.getElementById('services').value = 'Safety Covers Install'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Basic Opening Plan'){
+        document.getElementById('services').value = 'Basic Opening Plan'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Popular Plan'){
+        document.getElementById('services').value = 'Popular Plan'
+        document.getElementById('additionalServicesBox').style.display = 'none'
+    }else if(name == 'Additional Services'){
+        document.getElementById('services').value = 'Additional Services'
+        document.getElementById('additionalServicesBox').style.display = 'block'
     }
 }
 
-function requestPlan(name){
-    if(name == 'requestBasic'){
-        document.getElementById('services').value = 'Basic Plan'
-    }else if(name == 'requestPopular'){
-        document.getElementById('services').value = 'Popular Plan'
-    }else if(name == 'requestPremier'){
-        document.getElementById('services').value = 'Premier Plan'
+function checkAdditionalService(){
+    if(document.getElementById('services').value == 'Additional Services'){
+        document.getElementById('additionalServicesBox').style.display = 'block'
+    }else{
+        document.getElementById('additionalServicesBox').style.display = 'none'
     }
 }

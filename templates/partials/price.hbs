@@ -3,48 +3,56 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12 text-center">
-<p class="title">Passionate about perfection</p>
+<p class="title">Our Afordable Services</p>
  <h2 class="heading">Pricing Tables</h2>
 </div>
 <div class="col-md-12">
 <div class="pricing pricing_tenzin">
                 <div class="pricing_item dark_gray">
-                    <h3 class="pricing_title">Basic</h3>
-                    <div class="pricing_price"><span class="pricing_currency">$</span>199.90</div>
-                    <p class="pricing_sentence">Perfect for xyz</p>
+                    <h3 class="pricing_title">Basic Opening Plan</h3>
+                    <div class="pricing_price"><span class="pricing_currency">Starting at </span> $299.99<span class="pricing_currency"> + HST</span></div>
+                    <p class="pricing_sentence"></p>
                     <ul class="pricing_list">
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature"><strong>With Water Bags: $345 <span class="pricing_currency"> + HST</span>; Bead Covers: $320 <span class="pricing_currency"> + HST</span></strong></li>
+                        <li class="pricing_feature">Pump off water from cover and remove
+                        <li class="pricing_feature">Power wash, fold, and store cover in garage</li>
+                        <li class="pricing_feature">Drain, clean, and store water bags (if required)</li>
+                        <li class="pricing_feature">Re-assemble filtration equipment</li>
+                        <li class="pricing_feature">Re-install diving board, step ladders, eyeballs and return jets</li>
+                        <li class="pricing_feature">Add shock treatment</li>
+                        <li class="pricing_feature">System start-up</li>
+                        <li class="pricing_feature">1L concentrated algaecide</li>
                     </ul>
-                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("requestBasic")' href="#contact">Request Basic Plan</a>
+                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("Basic Opening Plan")' href="#contact">Request Basic Opening Plan</a>
                 </div>
                 <div class="pricing_item active">
-                    <h3 class="pricing_title">Popular</h3>
-                    <div class="pricing_price"><span class="pricing_currency">$</span>529.90</div>
-                    <p class="pricing_sentence">Suitable for xyz</p>
+                    <h3 class="pricing_title">Popular Plan</h3>
+                    <div class="pricing_price">Request Quote</div>
+                    <p class="pricing_sentence"></p>
                     <ul class="pricing_list">
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature"><strong>Basic Opening Plan</strong></li>
+                        <li class="pricing_feature">Heater start up</li>
+                        <li class="pricing_feature">18 weeks of weekly maintenance</li>
+                        <li class="pricing_feature">Weekly cleaning of scum line</li>
+                        <li class="pricing_feature">Weekly report of the swimming pool readings</li>
+                        <li class="pricing_feature"><strong>Closing package</strong></li>
+                        <br>
+                        <li class="pricing_feature"><strong>*Parts and repairs required during the season is not included and will be subject to additional costs.</strong></li>
                     </ul>
-                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("requestPopular")' href="#contact">Request Popular Plan</a>
+                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("Popular Plan")' href="#contact">Request Popular Plan</a>
                 </div>
                 <div class="pricing_item dark_gray">
-                    <h3 class="pricing_title">Premier</h3>
-                    <div class="pricing_price"><span class="pricing_currency">$</span>959.90</div>
-                    <p class="pricing_sentence">Great for xyz</p>
+                    <h3 class="pricing_title">Additional services</h3>
+                    <div class="pricing_price">Request Quote</div>
+                    <p class="pricing_sentence"></p>
                     <ul class="pricing_list">
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
-                        <li class="pricing_feature">Service Name</li>
+                        <li class="pricing_feature">Start-up spill over spa at time of opening at only <strong>$80 <span class="pricing_currency"> + HST </span></strong></li>
+                        <li class="pricing_feature">Vacuum pool at time of opening/start-up/per hour at only <strong>$75 <span class="pricing_currency"> + HST </span></strong></li>
+                        <li class="pricing_feature">Salt cell inspection and cleaning at time of opening or closing at only <strong>$32.50 <span class="pricing_currency"> + HST </span></strong></li>
+                        <li class="pricing_feature">Cartridge cleaning with concentrated cleaner (onsite) at only <strong>$90 <span class="pricing_currency"> + HST </span></strong></li>
+                        <li class="pricing_feature">Add salt to the pool at only <strong>$12.99/bag <span class="pricing_currency"> + HST </span></strong></li>
                     </ul>
-                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("requestPremier")' href="#contact">Request Premier Plan</a>
+                    <a class="pricing_action text-center bounce-white" onclick='requestPlan("Additional Services")' href="#contact">Request Additional Services</a>
                 </div>
             </div>
           </div>
@@ -65,29 +73,48 @@
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
               <input type="text" class="form-control"  placeholder="Your Name *" name="name" id="name" required>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group" style='text-align: left'>
               <input type="number" class="form-control"  placeholder="Phone Number *" name="phone" id="phone" onfocusout='validatePhoneNumber()' required>
+              <span id='phoneMessage' style='color: red; display:none'>Phone number should be exactly 10 numbers, and in the format xxxxxxxxxx</span>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group" style='text-align: left'>
+              <select id='methodOfContact' name="methodOfContact" class="form-control" style='padding: 1px' required>
+                <option value=''>Method of Contact *</option>
+                <option value="Phone">Phone</option>
+                <option value="Email">Email</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 form-group" style='text-align: left'>
               <input type="email" class="form-control"  placeholder="E-mail Address (optional)" name="email" id="email" onfocusout='validateEmail()'>
+              <span id='emailMessage' style='color: red; display:none'>Please enter Valid email address</span>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input list="methodOfContacts" class="form-control"  placeholder="Method of Contact *" name="methodOfContact" id="methodOfContact" onfocusout='validateMethodOfContact()' required>
-              <datalist id='methodOfContacts'>
-                <option value="Phone">
-                <option value="Email">
-              </datalist>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-              <input list="Services" class="form-control"  placeholder="Choose your desired Service *" name="services" id="services" required>
-              <datalist id='Services'>
-                <option value="Basic Plan">
-                <option value="Popular Plan">
-                <option value="Premier Plan">
-              </datalist>
+              <select class="form-control" id='services' name="services" onchange='checkAdditionalService()' style='padding:1px' required>   
+                <option value=''>Choose your desired Service *</option>
+                <option value='Additional Services'>Additional Services</option>
+                <option value="Basic Opening Plan">Basic Opening Plan</option>
+                <option value='Chemical Checks'>Chemical Checks</option>
+                <option value="Equipment Install">Equipment Install</option>
+                <option value='Hot Tub Maintenance'>Hot Tub Maintenance</option>
+                <option value="Liner Install">Liner Install</option>
+                <option value='Openings and Closings'>Openings and Closings</option>
+                <option value="Painting">Painting</option>
+                <option value="Pool Leak Detection">Pool Leak Detection</option>
+                <option value="Popular Plan">Popular Plan</option>
+                <option value='Safety Covers Install'>Safety Covers Install</option>
+                <option value='Swimming Pool Maintenance'>Swimming Pool Maintenance</option>
+                <option value='Weekly Service'>Weekly Service</option>
+              </select>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
               <input type="text" class="form-control"  placeholder="Address/Town *" name="Address" id="Address" required>
+            </div>
+            <div class="col-xs-8 col-md-12" id='additionalServicesBox' style='text-align: left; display: none; background-color: #fff; margin-bottom:15px; padding: 8px;'>
+              <input type='checkbox' id='1' name='ser1'> Start-up spill over spa at time of opening @ $80 <span class="pricing_currency"> + HST</input><br>
+              <input type='checkbox' id='2' name='ser2'> Vacuum pool at time of opening/start-up/per hour @ $75 <span class="pricing_currency"> + HST</input><br>
+              <input type='checkbox' id='3' name='ser3'> Salt cell inspection and cleaning at time of opening or closing @ $32.50 <span class="pricing_currency"> + HST</input><br>
+              <input type='checkbox' id='4' name='ser4'> Cartridge cleaning with concentrated cleaner (onsite) @ $90 <span class="pricing_currency"> + HST</input><br>
+              <input type='checkbox' id='5' name='ser5'> Add salt to the pool @ $12.99/bag <span class="pricing_currency"> + HST</input><br>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
               <input type="text" class="form-control"  placeholder="Project Timeline (optional)" name="projectTimeline" id="projectTimeline">
