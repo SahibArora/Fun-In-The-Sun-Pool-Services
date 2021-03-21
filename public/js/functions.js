@@ -114,7 +114,7 @@ jQuery(function($) {'use strict',
 		jQuery(".logo > img").attr("src", "images/Logo-text.png");
 	 }
 	  else {
-		jQuery(".logo > img").attr("src", "images/Logo-1-black.png");
+		jQuery(".logo > img").attr("src", "images/Logo-text-white.png");
 	 }
   
   });
