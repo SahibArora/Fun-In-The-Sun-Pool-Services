@@ -2352,6 +2352,10 @@ margin-top: 30px;
 
   h2{ font-size:30px; }
   #main-navigation{ background-color: #1b1d1f; }
+
+  #fitsLogo {
+    content: url('../images/Logo-text-white.png')
+   }
   
   .navbar-brand, #navigation.affix .navbar-brand{ display:inline-block;  padding: 15px 0;}
   .navbar-default .navbar-nav > li > a, #navigation.affix  .navbar-default .navbar-nav > li > a {
