@@ -129,11 +129,7 @@ jQuery(function($) {'use strict',
         }, 1200, 'easeInOutExpo');
        event.preventDefault();;
 		$('#navigation').affix({offset: {top: 50} });
-		
-		
    });
-
-
 
 //Facts Counters Home Page
 	 $(".number-counters").appear(function () {

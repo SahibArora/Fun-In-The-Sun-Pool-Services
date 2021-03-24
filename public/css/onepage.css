@@ -2442,7 +2442,6 @@ margin-top: 30px;
 		
 	}
 	
-	
 	.circliful {
 	  margin-bottom: 50px;
 	  margin-left:0;
@@ -2453,10 +2452,6 @@ margin-top: 30px;
 	.circliful:first-child {
 	  margin-left: 0;
 	}
-	
-	
-	
-		
 }
 
 
@@ -2466,18 +2461,7 @@ margin-top: 30px;
 		  width: 48%;
 		  display:inline-block;
 	  } 
-	  
-	 
-	  
-	  
-	  
-	  
-	  
-   
 }
-
-
-
 
 @media screen and (max-width: 480px) {
 	.navbar-brand img{
@@ -2517,5 +2501,3 @@ margin-top: 30px;
 	}
 	
 }
-
-
