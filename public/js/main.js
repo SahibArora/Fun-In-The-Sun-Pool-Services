@@ -37,92 +37,37 @@ function validatePhoneNumber()
 function requestPlan(name){
     if(name == 'Liner Install'){
         document.getElementById('services').value = 'Liner Install'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Equipment Install'){
         document.getElementById('services').value = 'Equipment Install'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Pool Leak Detection'){
         document.getElementById('services').value = 'Pool Leak Detection'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Openings and Closings'){
         document.getElementById('services').value = 'Openings and Closings'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Swimming Pool Maintenance'){
         document.getElementById('services').value = 'Swimming Pool Maintenance'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Hot Tub Maintenance'){
         document.getElementById('services').value = 'Hot Tub Maintenance'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Chemical Checks'){
         document.getElementById('services').value = 'Chemical Checks'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Weekly Service'){
         document.getElementById('services').value = 'Weekly Service'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Safety Covers Install'){
         document.getElementById('services').value = 'Safety Covers Install'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Basic Opening Plan'){
         document.getElementById('services').value = 'Basic Opening Plan'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Popular Plan'){
         document.getElementById('services').value = 'Popular Plan'
-        document.getElementById('additionalServicesBox').style.display = 'none'
-        document.getElementById('1').checked = false
-        document.getElementById('2').checked = false
-        document.getElementById('3').checked = false
-        document.getElementById('4').checked = false
-        document.getElementById('5').checked = false
+        hideAdditionalServiceBox()
     }else if(name == 'Additional Services'){
         document.getElementById('services').value = 'Additional Services'
         document.getElementById('additionalServicesBox').style.display = 'block'
@@ -133,11 +78,15 @@ function checkAdditionalService(){
     if(document.getElementById('services').value == 'Additional Services'){
         document.getElementById('additionalServicesBox').style.display = 'block'
     }else{
-        document.getElementById('additionalServicesBox').style.display = 'none'
+        hideAdditionalServiceBox()
+    }
+}
+
+function hideAdditionalServiceBox(){
+    document.getElementById('additionalServicesBox').style.display = 'none'
         document.getElementById('1').checked = false
         document.getElementById('2').checked = false
         document.getElementById('3').checked = false
         document.getElementById('4').checked = false
         document.getElementById('5').checked = false
-    }
 }
