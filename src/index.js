@@ -41,7 +41,7 @@ app.get('/', (req,res) => {
 })
 
 app.post('/requestQuote', async (req,res)=>{
-    res.render('thankyou', {})
+    res.render('index', {})
     sendEmail(req.body)
 })
 
