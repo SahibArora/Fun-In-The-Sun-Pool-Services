@@ -458,7 +458,8 @@ ul.top-right li a:hover,
 }	
 #main-navigation {
   position: absolute;
- 
+  background-color: #fff;
+  color: black;
 }
 #navigation.affix {
   background-color: #fff;
@@ -469,7 +470,7 @@ ul.top-right li a:hover,
 
 }
 #navigation.affix > .container > .row > div > nav > div > a > #fitsLogo{
-	content: url('../images//Logo-text.png');
+	content: url('../images//Logo.png');
   }
 #main-navigation, #navigation.affix{
 	top: 0;
@@ -2357,7 +2358,7 @@ margin-top: 30px;
   #main-navigation{ background-color: #1b1d1f; }
 
   #fitsLogo {
-    content: url('../images/Logo-text-white.png')
+    content: url('../images/Logo.png')
    }
   
   .navbar-brand, #navigation.affix .navbar-brand{ display:inline-block;  padding: 15px 0;}
