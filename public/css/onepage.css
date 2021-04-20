@@ -2362,7 +2362,7 @@ margin-top: 30px;
     content: url('../images/Logo.png')
    }
   
-  .navbar-brand, #navigation.affix .navbar-brand{ display:inline-block;  padding: 15px 0;}
+  .navbar-brand, #navigation.affix .navbar-brand{ display:inline-block;  padding: 0;}
   .navbar-default .navbar-nav > li > a, #navigation.affix  .navbar-default .navbar-nav > li > a {
 	  padding: 5px 0;
 	}
