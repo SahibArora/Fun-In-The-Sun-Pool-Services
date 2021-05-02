@@ -8,8 +8,8 @@ var hbs = require('hbs')
 var bodyParser = require('body-parser')
 const {sendEmail} = require('./email/account.js')
 
-// Database Connection
-require('./db-connection/mongoose')
+// // Database Connection
+// require('./db-connection/mongoose')
 
 // Diferent application routers
 /*const userRouter = require('./routers/user')*/

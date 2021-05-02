@@ -1,11 +1,11 @@
 const sgMail = require('@sendgrid/mail') 
 
-const sendGridAPIKey = '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'
+const sendGridAPIKey = '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'
 
 sgMail.setApiKey(sendGridAPIKey)
 
 const sendEmail = (obj) => {
-    
+    console.log('here')
     var additionalService = "";
 
     if(Object.keys(obj).forEach((service)=>{
@@ -22,11 +22,9 @@ const sendEmail = (obj) => {
         }
     }))
 
-    console.log('Additional Service' + additionalService)
-
     sgMail.send({
-        to: 'sahibarora1997@gmail.com',
-        from: 'sarora37@outlook.com',
+        to: 'jason@fitspoolservice.com',
+        from: 'jason@fitspoolservice.com',
         subject: '[Website] Quote Requested',
         text: `Hi Jason,\n\nWe need your attention\n\n A Quote has been requested.\n\nHere are the details -\n
         Name: ${obj.name}\n
@@ -43,8 +41,12 @@ const sendEmail = (obj) => {
         Thank you!\n\n
         Yours Sincerely,\n
         Fits Pool Service Website`
+    }).then(()=>{
+        console.log('Sent')
+    }).catch((error)=>{
+        
     })
-    console.log('Success')
+    console.log('end')
 }
 
 module.exports = {
