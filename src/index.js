@@ -41,13 +41,13 @@ app.get('/', (req,res) => {
 })
 
 app.post('/requestQuote', async (req,res)=>{
-    res.render('index', {})
+    res.redirect('/')
     sendEmail(req.body)
 })
 
-/*app.get('*',(req,res)=>{
+app.get('*',(req,res)=>{
     res.render('404', {});
-});*/
+});
 
 // Making Server listen to specific port.
 

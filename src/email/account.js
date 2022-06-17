@@ -1,11 +1,11 @@
 const sgMail = require('@sendgrid/mail') 
 
-const sendGridAPIKey = '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'
+const SENDGRIP_API_KEY = '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'
 
-sgMail.setApiKey(sendGridAPIKey)
+sgMail.setApiKey(SENDGRIP_API_KEY)
 
 const sendEmail = (obj) => {
-    console.log('here')
+    console.log('here ')
     var additionalService = "";
 
     if(Object.keys(obj).forEach((service)=>{
@@ -21,10 +21,12 @@ const sendEmail = (obj) => {
             additionalService += " - Add salt to the pool\n"
         }
     }))
+    
+    console.log('here 1')
 
     sgMail.send({
-        to: 'jason@fitspoolservice.com',
-        from: 'jason@fitspoolservice.com',
+        to: 'sahibarora1997@gmail.com',
+        from: 'sarora37@outlook.com',
         subject: '[Website] Quote Requested',
         text: `Hi Jason,\n\nWe need your attention\n\n A Quote has been requested.\n\nHere are the details -\n
         Name: ${obj.name}\n
@@ -41,10 +43,12 @@ const sendEmail = (obj) => {
         Thank you!\n\n
         Yours Sincerely,\n
         Fits Pool Service Website`
-    }).then(()=>{
+    })
+    .then(()=>{
         console.log('Sent')
-    }).catch((error)=>{
-        
+    })
+    .catch((error)=>{
+        console.error('error ', error)
     })
     console.log('end')
 }

@@ -16,7 +16,7 @@
               <span id='phoneMessage' style='color: red; display:none'>Phone number should be exactly 10 numbers, and in the format xxxxxxxxxx</span>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 form-group" style='text-align: left'>
-              <select id='methodOfContact' name="methodOfContact" class="form-control" style='padding: 1px' required>
+              <select id='methodOfContact' name="methodOfContact" class="form-control" style='padding: 1px' onchange='checkEmail()' required>
                 <option value=''>Method of Contact *</option>
                 <option value="Phone">Phone</option>
                 <option value="Email">Email</option>
@@ -70,3 +70,18 @@
     </div>
   </div>
 </section>
+
+<script>
+  function checkEmail(){
+    var value = document.getElementById('methodOfContact').value
+    var email = document.getElementById('email')
+
+    if(value == 'Email'){
+      email.placeholder = 'Email *'
+      email.required = true;
+    }else if(value == 'Phone'){
+      email.placeholder = 'E-mail Address (optional)'
+      email.required = false;
+    }
+  }
+</script>

@@ -1,5 +1,19 @@
 function validateForm(){
-    return validatePhoneNumber()
+    if(document.getElementById('methodOfContact').value == 'Email'){
+        if(validateEmail() && validatePhoneNumber()){
+            alert("Request received! \n\n We will get back to you in 1 Day! :)")
+        }else{
+            alert("An unknown Error has occured!")
+        }
+        return validateEmail() && validatePhoneNumber()
+    }else{
+        if(validatePhoneNumber()){
+            alert("Request received! \n\n We will get back to you in 1 Day! :)")
+        }else{
+            alert("An unknown Error has occured!")
+        }
+        return validatePhoneNumber()
+    }
 }
 
 function validateEmail(){
@@ -90,3 +104,19 @@ function hideAdditionalServiceBox(){
         document.getElementById('4').checked = false
         document.getElementById('5').checked = false
 }
+
+function builtTile() {
+    var date = new Date();
+    if(date.getMonth() >= 2 && date.getMonth() <= 5){
+        document.getElementById('headingTitle').innerHTML = `SPRING ${date.getFullYear()} IS HERE!`;
+        document.getElementById('headingSubTitle').innerHTML = `BOOK YOUR OPENING TODAY!`;
+    }else if(date.getMonth() >= 6 && date.getMonth() <= 8){
+        document.getElementById('headingTitle').innerHTML = `SUMMER ${date.getFullYear()} IS HERE!`;
+        document.getElementById('headingSubTitle').innerHTML = `BOOK SERVICE REQUEST TODAY!`;
+    }else {
+        document.getElementById('headingTitle').innerHTML = `IT IS CLOSING TIME FOR ${date.getFullYear()}!`;
+        document.getElementById('headingSubTitle').innerHTML = `BOOK YOUR CLOSING TODAY!`;
+    }
+}
+
+builtTile();
